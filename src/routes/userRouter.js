@@ -16,7 +16,7 @@ userRouter.post(
   userController.createNewUser,
 );
 userRouter.get('/', validateToken, userController.readAllUsers);
-// userRouter.get('/:id', validateToken, userController.readUserById);
+userRouter.get('/:id', validateToken, userController.readUserById);
 // userRouter.delete(
 //   '/me',
 //   validateToken, 
